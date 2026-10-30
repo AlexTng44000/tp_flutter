@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'profile_page.dart';
@@ -11,6 +10,7 @@ import 'messages_page.dart';
 import 'gallery_page.dart';
 import 'registration_page.dart';
 import 'home_page.dart';
+import 'api_products_page.dart';
 
 // Exercise information
 class Exercise {
@@ -187,7 +187,7 @@ class ExercisesHomePage extends StatelessWidget {
 
           const SizedBox(height: 25),
 
-          // Previous exercise
+          // Other exercises section
           const Text(
             'OTHER EXERCISES',
             style: TextStyle(
@@ -206,6 +206,16 @@ class ExercisesHomePage extends StatelessWidget {
               description: 'Switch, DatePicker and Dialog',
               icon: Icons.settings,
               page: PreferencesPage(),
+            ),
+          ),
+
+          buildExerciseCard(
+            context,
+            const Exercise(
+              title: 'Products API',
+              description: 'HTTP, JSON, FutureBuilder and Hero',
+              icon: Icons.cloud_download,
+              page: ApiProductsPage(),
             ),
           ),
         ],
