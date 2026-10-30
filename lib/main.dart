@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'widgets/actions_page.dart';
+import 'widgets/messages_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ActionsPage(),
+      home: MessagesPage(),
     );
   }
 }
