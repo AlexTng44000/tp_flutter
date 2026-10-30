@@ -44,6 +44,22 @@ L'écran d'inscription permet de :
 
 La validation est locale : ce TP ne crée pas de compte utilisateur sur un serveur.
 
+## TP – Intégration d'une API REST
+
+Ce TP permet de récupérer et d'afficher des produits depuis
+l'API publique DummyJSON.
+
+Fonctionnalités :
+- Requêtes HTTP avec le package `http`
+- Conversion des données JSON en objets Dart
+- Chargement asynchrone avec `FutureBuilder`
+- Affichage dynamique avec `ListView.builder`
+- Navigation vers une page de détail
+- Animation des images avec le widget `Hero`
+- Gestion des erreurs et bouton de rechargement
+
+**API utilisée :** https://dummyjson.com/products
+
 ### Autre exercice – Préférences
 
 Une page de préférences permet de tester un interrupteur de notifications, un sélecteur de date, une boîte de dialogue de confirmation et un indicateur de chargement.
